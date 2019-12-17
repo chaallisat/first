@@ -4,22 +4,75 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>Payday</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<h1>HOW TO SAVE THE WORLD</h1>
-			
-			<h1>The damage to the enviornment</h1>
-			<h2>By Sam Winchester</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis dolorum a voluptas eligendi dolores aspernatur ducimus id temporibus, nostrum laudantium! Tenetur blanditiis, et nemo error ipsam vitae iste voluptate?</p>
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+
+	<div class="container">
+
+		<!--  -->
+		<div class="card mb-4">
+			<div class="card-header">Payday</div>
+			<div class="card-body">
+			  <table class="table table-sm table-hover" id='train-table'>
+				<thead>
+				  <tr>
+					<th scope="col">Pay Period</th>
+					<th scope="col">Hours Worked</th>
+					<th scope="col">Amount Earned</th>
+					<th scope="col">Taxes Taken</th>
+					<th scope="col">Total Amount Recieved</th>
+					<th scope="col">Pay Date</th>
+				  </tr>
+				</thead>
+				<tbody>
+				</tbody>
+			  </table>
+			</div>
+		  </div>
+
+		  <!-- Form -->
+		  <div class="row">
+			<div class="col-md-12">
+			  <div class="card mb-4">
+				<div class="card-header">Add Train</div>
+				<div class="card-body">
+				  <!-- Entry Form -->
+				  <form>
+					<div class="form-group">
+					  <label for="name">Name</label>
+					  <input class="form-control" id="name" type="text">
+					</div>
+					<div class="form-group">
+					  <label for="hour-wage">Hourly Wages</label>
+					  <input class="form-control" id="hour-wage" type="number">
+					</div>
+					<div class="form-group">
+					  <label for="tax-rate">Tax Rate (%)</label>
+					  <input class="form-control" id="tax-rate" type="number">
+					</div>
+					<div class="form-group">
+						<label for="first-payday">First Payday</label>
+						<input class="form-control" id="first-payday" type="text">
+					  </div>
+					<button class="btn btn-primary float-right" id="add-train">Submit</button>
+				  </form>
+	  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+	</div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/moment.js"></script>
 
 </body>
 </html>
